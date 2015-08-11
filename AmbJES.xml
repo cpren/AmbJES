@@ -2,7 +2,7 @@
   <block type="controls_repeat" id="153" inline="true" x="-31" y="-558">
     <value name="TIMES">
       <block type="math_number" id="154">
-        <field name="NUM">2</field>
+        <field name="NUM">1</field>
       </block>
     </value>
     <statement name="DO">
@@ -15,7 +15,7 @@
                 <field name="OBJECT">GREEN</field>
                 <next>
                   <block type="oled_drawtext" id="208">
-                    <field name="TEXT">I'M ON THE WAY</field>
+                    <field name="TEXT">I'M ON THE WAY!</field>
                     <next>
                       <block type="oled_setcursor" id="199" inline="true">
                         <value name="STARTX">
@@ -183,6 +183,9 @@
                                                                     <field name="NUM">1000</field>
                                                                   </block>
                                                                 </value>
+                                                                <next>
+                                                                  <block type="movement_stop" id="328"></block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
