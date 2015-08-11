@@ -85,44 +85,44 @@
                       </block>
                     </value>
                     <statement name="DO">
-                      <block type="led_select" id="127" inline="true">
-                        <field name="ACTION">ON</field>
-                        <value name="LED">
-                          <block type="variables_get" id="128">
-                            <field name="VAR">light</field>
+                      <block type="variables_set" id="136" inline="true">
+                        <field name="VAR">light</field>
+                        <value name="VALUE">
+                          <block type="math_arithmetic" id="137" inline="true">
+                            <field name="OP">MINUS</field>
+                            <value name="A">
+                              <block type="variables_get" id="138">
+                                <field name="VAR">light</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="139">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
                         <next>
-                          <block type="robot_delay" id="129" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="130">
-                                <field name="NUM">100</field>
+                          <block type="led_select" id="127" inline="true">
+                            <field name="ACTION">ON</field>
+                            <value name="LED">
+                              <block type="variables_get" id="128">
+                                <field name="VAR">light</field>
                               </block>
                             </value>
                             <next>
-                              <block type="led_select" id="133" inline="true">
-                                <field name="ACTION">OFF</field>
-                                <value name="LED">
-                                  <block type="variables_get" id="134">
-                                    <field name="VAR">light</field>
+                              <block type="robot_delay" id="129" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="130">
+                                    <field name="NUM">100</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="variables_set" id="136" inline="true">
-                                    <field name="VAR">light</field>
-                                    <value name="VALUE">
-                                      <block type="math_arithmetic" id="137" inline="true">
-                                        <field name="OP">MINUS</field>
-                                        <value name="A">
-                                          <block type="variables_get" id="138">
-                                            <field name="VAR">light</field>
-                                          </block>
-                                        </value>
-                                        <value name="B">
-                                          <block type="math_number" id="139">
-                                            <field name="NUM">1</field>
-                                          </block>
-                                        </value>
+                                  <block type="led_select" id="133" inline="true">
+                                    <field name="ACTION">OFF</field>
+                                    <value name="LED">
+                                      <block type="variables_get" id="134">
+                                        <field name="VAR">light</field>
                                       </block>
                                     </value>
                                   </block>
