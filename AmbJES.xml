@@ -20,12 +20,12 @@
                       <block type="oled_setcursor" id="199" inline="true">
                         <value name="STARTX">
                           <block type="math_number" id="215">
-                            <field name="NUM">30</field>
+                            <field name="NUM">20</field>
                           </block>
                         </value>
                         <value name="STARTY">
                           <block type="math_number" id="230">
-                            <field name="NUM">20</field>
+                            <field name="NUM">30</field>
                           </block>
                         </value>
                         <next>
@@ -156,6 +156,22 @@
                                             </next>
                                           </block>
                                         </statement>
+                                        <next>
+                                          <block type="movement_forward" id="266">
+                                            <next>
+                                              <block type="robot_delay" id="277" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="284">
+                                                    <field name="NUM">100</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="movement_stop" id="294"></block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
