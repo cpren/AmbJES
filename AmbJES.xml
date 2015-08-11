@@ -137,23 +137,27 @@
                           </block>
                         </statement>
                         <next>
-                          <block type="oled_color" id="239">
-                            <field name="OBJECT">GREEN</field>
+                          <block type="oled_cleardisplay" id="256">
                             <next>
-                              <block type="oled_drawtext" id="208">
-                                <field name="TEXT">I'M ON THE WAY</field>
+                              <block type="oled_color" id="239">
+                                <field name="OBJECT">GREEN</field>
                                 <next>
-                                  <block type="oled_setcursor" id="199" inline="true">
-                                    <value name="STARTX">
-                                      <block type="math_number" id="215">
-                                        <field name="NUM">20</field>
+                                  <block type="oled_drawtext" id="208">
+                                    <field name="TEXT">I'M ON THE WAY</field>
+                                    <next>
+                                      <block type="oled_setcursor" id="199" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="215">
+                                            <field name="NUM">20</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="230">
+                                            <field name="NUM">20</field>
+                                          </block>
+                                        </value>
                                       </block>
-                                    </value>
-                                    <value name="STARTY">
-                                      <block type="math_number" id="230">
-                                        <field name="NUM">20</field>
-                                      </block>
-                                    </value>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
