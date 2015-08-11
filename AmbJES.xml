@@ -175,6 +175,11 @@
                         </statement>
                         <next>
                           <block type="controls_repeat" id="554" inline="true">
+                            <value name="TIMES">
+                              <block type="math_number" id="555">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
                             <statement name="DO">
                               <block type="multimedia_playwav" id="511">
                                 <field name="WAV">siren1.wav</field>
