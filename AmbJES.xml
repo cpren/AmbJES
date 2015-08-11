@@ -141,29 +141,5 @@
         </next>
       </block>
     </statement>
-    <next>
-      <block type="multimedia_playwav" id="22">
-        <field name="WAV">siren1.wav</field>
-        <next>
-          <block type="oled_setcursor" id="60" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="155">
-                <field name="NUM">20</field>
-              </block>
-            </value>
-            <value name="STARTY">
-              <block type="math_number" id="162">
-                <field name="NUM">10</field>
-              </block>
-            </value>
-            <next>
-              <block type="oled_drawtext" id="70">
-                <field name="TEXT">I'M ON THE WAY</field>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
   </block>
 </xml>
